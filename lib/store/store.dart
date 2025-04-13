@@ -3,9 +3,9 @@ import 'package:signals/signals.dart';
 
 class Store {
   final products = signal<List<Product>>([
-    Product(id: 1, name: "Computer", price: 3200.0, selected: false, url: ""),
-    Product(id: 2, name: "Printer", price: 1200.0, selected: true, url: ""),
-    Product(id: 3, name: "SmartPhone", price: 3200.0, selected: false, url: ""),
+    Product(id: 1, name: "Computer", price: 3200.0, selected: false, url: "https://m.media-amazon.com/images/I/8141dmCDmiL._AC_UL480_FMwebp_QL65_.jpg"),
+    Product(id: 2, name: "Printer", price: 1200.0, selected: true, url: "https://m.media-amazon.com/images/I/51BBLePpyHL._AC_UL480_FMwebp_QL65_.jpg"),
+    Product(id: 3, name: "SmartPhone", price: 3200.0, selected: false, url: "https://m.media-amazon.com/images/I/61aSeGGdwfL._AC_UL480_FMwebp_QL65_.jpg"),
   ]);
 
   void select(Product product) {
@@ -17,10 +17,10 @@ class Store {
   addRandomProducts() {
     final prod = Product(
       id: products.value.length,
-      name: "A",
+      name: "OUD Parfum",
       price: 500,
       selected: false,
-      url: "url",
+      url: "https://m.media-amazon.com/images/I/61aSeGGdwfL._AC_UL480_FMwebp_QL65_.jpg",
     );
 
     products.value = [...products.value, prod];
