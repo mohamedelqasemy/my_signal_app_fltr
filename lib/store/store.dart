@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:my_signal_app_fltr/model/Product.model.dart';
 import 'package:signals/signals.dart';
 
